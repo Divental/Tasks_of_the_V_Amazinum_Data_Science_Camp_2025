@@ -47,6 +47,7 @@ def second_condition(inner_list_numbers_, inner_list_numbers_two_):
             if a + b not in sum_pairs:
                 sum_pairs[a + b] = []
             sum_pairs[a + b].append((a, b))
+
     return sum_pairs
 
 """
@@ -54,13 +55,15 @@ def second_condition(inner_list_numbers_, inner_list_numbers_two_):
 """
 def third_condition(sum_pairs):
     possible_sum_correct_pairs = {value: pairs for value, pairs in sum_pairs.items() if len(pairs) == 1}
+
     return possible_sum_correct_pairs
 
 """
 Виводжу всі можливі пари (a,b), які відповідають умовам задачі.
 """
 def fourth_condition(sum_pairs, possible_sum):
-    final_numbers_pairs = [pairs for s, pairs in sum_pairs.items() if s in possible_sum]
+    final_numbers_pairs = [pairs for value, pairs in sum_pairs.items() if value in possible_sum]
+
     return final_numbers_pairs
 
 inner_list_numbers= search_for_all_pairs()
