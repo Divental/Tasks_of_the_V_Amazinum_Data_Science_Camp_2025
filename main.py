@@ -12,6 +12,14 @@ Sum: I know it;
 Prod: then I know the numbers;
 Sum: then I know the numbers too.
 
+
+
+
+ Final list:  [[(3, 4)], [(69, 96)], [(77, 96)], [(78, 98)], [(80, 99)], [(84, 84)], [(84, 88)], [(84, 91)], [(88, 90)]]
+
+
+
+
 """
 
 """
